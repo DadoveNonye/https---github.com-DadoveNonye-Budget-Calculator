@@ -15,7 +15,7 @@ function App() {
 
   const [budgetEx, setBudgetEx] = useState(initialBudget);
   const [Amount, setAmount] = useState("");
-  const [Item, setItem] = useState();
+  const [Item, setItem] = useState("");
   const [Alertt, setAlert] = useState({ show: false });
 
   useEffect(() => {
@@ -49,10 +49,10 @@ function App() {
       setItem("");
       setAmount("");
     }
-    if (Item == "") {
+    if (Item === "") {
       renderAlert({ type: "danger", text: "ITEM EMPTY" });
     }
-    if (Amount <= 0 || Amount == "") {
+    if (Amount <= 0 || Amount === "") {
       renderAlert({ type: "danger", text: "USE A VALID AMOUNT" });
     }
   }
