@@ -83,3 +83,8 @@ input {
   text-align: center;
   align-items: center;
 }
+@media (min-width: 320px) {
+  .budget {
+    width: 430px;
+  }
+}
